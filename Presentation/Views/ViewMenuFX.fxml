@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" styleClass="pane" stylesheets="@../pasterStyle.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="246.0" minHeight="10.0" prefHeight="235.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="265.0" minHeight="10.0" prefHeight="265.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <HBox fx:id="logoHBox" alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <ImageView id="logoImageView" fx:id="logoImageView" fitHeight="186.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Resources/banner-pastermind.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="25.0" GridPane.rowIndex="1">
+         <children>
+            <Button id="newGameButton" fx:id="newGameButton" mnemonicParsing="false" onAction="#onNewGameButtonClick" prefWidth="120.0" text="%NewGame" />
+            <Button id="loadGameButton" fx:id="loadGameButton" mnemonicParsing="false" onAction="#onLoadGameButtonClick" prefWidth="120.0" text="%LoadGame" />
+            <Button id="viewRankingButton" fx:id="viewRankingButton" mnemonicParsing="false" onAction="#onViewRankingButtonClick" prefWidth="120.0" text="%ViewRanking" />
+            <Button fx:id="languageButton" alignment="CENTER" minWidth="-Infinity" mnemonicParsing="false" onAction="#onLanguageButtonClick" prefWidth="120.0" text="%Language" />
+            <Button fx:id="helpButton" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onHelpButtonClick" prefWidth="120.0" text="%Help" />
+         </children>
+         <GridPane.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </GridPane.margin>
+      </VBox>
+   </children>
+</GridPane>

@@ -1,0 +1,137 @@
+.root {
+    -fx-background-color: #424242;
+    -fx-accent: #d32f2f;
+}
+
+.pane {
+    -fx-background-color: #424242;
+    -fx-accent: #d32f2f;
+}
+
+.button {
+    -fx-background-color: #d32f2f;
+    -fx-text-fill: white;
+}
+
+.label {
+    -fx-text-fill: white;
+}
+
+.text-field {
+    -fx-focus-color: #d32f2f;
+    -fx-highlight-fill: #d32f2f;
+    -fx-text-box-border: white;
+    -fx-faint-focus-color: transparent;
+    /*-fx-faint-focus-color: #d32f2f;  ACCESSIBILITAT  */
+}
+
+.table-view {
+    -fx-background-color: white;
+    -fx-border-color: transparent;
+    -fx-border-insets: 0;
+}
+
+.table-column {
+    -fx-background-color: white;
+    -fx-border-color: transparent;
+    -fx-border-width: 0 0 0 0;
+}
+
+.table-view .column-header, .table-view .filler {
+    -fx-background-color: #424242;
+    -fx-border-color: transparent;
+    -fx-border-width: 0 0 0 0;
+    -fx-border-insets: 0;
+}
+
+.table-row-cell:empty {
+    -fx-border-width: 0px;
+    -fx-background-color: white;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #d32f2f;
+}
+
+.table-view:row-selection .table-row-cell:filled:selected * {
+    -fx-background-color: #d32f2f;
+}
+
+.table-view:row-selection .table-row-cell:filled:selected .text {
+    -fx-fill: white;
+}
+
+
+.choice-box {
+    -fx-control-inner-background: white;
+    -fx-mark-color: #d32f2f;
+    -fx-focus-color: #d32f2f;
+    -fx-faint-focus-color: transparent;
+}
+
+.choice-box > .label {
+    -fx-text-fill: black;
+}
+
+
+.choice-box .menu-item:focused {
+    -fx-background-color: #d32f2f;
+}
+
+.choice-box .menu-item > .label {
+    -fx-text-fill: black;
+}
+
+.choice-box .menu-item:focused > .label {
+    -fx-text-fill: white;
+}
+
+
+.list-view {
+    -fx-background-color: #6d6d6d;
+}
+
+
+.list-cell {
+    -fx-background-color: #6d6d6d;
+}
+
+.list-cell:filled {
+    -fx-background-color: #6d6d6d;
+}
+
+.list-cell:filled:selected {
+    -fx-background-color: #6d6d6d;
+}
+
+#colorsListView {
+    -fx-background-color: #eeeeee;
+}
+
+#colorsListView .list-cell {
+    -fx-background-color: #eeeeee;
+}
+
+#colorsListView .list-cell:filled {
+    -fx-background-color: #eeeeee;
+}
+
+#colorsListView .list-cell:filled:selected {
+    -fx-background-color: #6d6d6d;
+}
+
+#chosenColorsListView {
+    -fx-background-color: #eeeeee;
+}
+
+#chosenColorsListView .list-cell {
+    -fx-background-color: #eeeeee;
+}
+
+#chosenColorsListView .list-cell:filled {
+    -fx-background-color: #eeeeee;
+}
+
+#chosenColorsListView .list-cell:filled:selected {
+    -fx-background-color: #6d6d6d;
+}
